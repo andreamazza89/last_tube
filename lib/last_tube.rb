@@ -11,6 +11,7 @@ class LastTube < Sinatra::Base
   end
 
   get '/tubes/search' do
-    haml :station_search, locals: { from_station: 'placeholder for Station found'  }
+    @from_station_search_result = 'placeholder for Station found'
+    haml :station_search
   end
 end
