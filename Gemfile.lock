@@ -11,6 +11,8 @@ GEM
       xpath (~> 2.0)
     diff-lcs (1.2.5)
     extlib (0.9.16)
+    haml (4.0.7)
+      tilt
     highline (1.7.8)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -57,6 +59,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  haml
   rspec
   rspec-sinatra
   sinatra
