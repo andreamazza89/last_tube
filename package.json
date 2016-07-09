@@ -1,0 +1,15 @@
+{
+  "name": "last_tube",
+  "version": "1.0.0",
+  "description": "find out when the last train leaves",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec/frontend && rspec"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
