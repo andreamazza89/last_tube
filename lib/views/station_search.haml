@@ -1,7 +1,17 @@
 %form#fromStation
   From
   %br
-  %input{type: 'text', name: 'fromStation'}
-  %input{type: 'submit', value: 'search'}
+  %input{type: 'text', id: 'fromSearchParameter', name: 'fromStation'}
+  %input{type: 'submit', value: 'from'}
+%form#toStation
+  To
+  %br
+  %input{type: 'text', id: 'toSearchParameter', name: 'toStation'}
+  %input{type: 'submit', value: 'to'}
  
-%p= @from_station_search_result
+%p
+  From 
+  %span#fromStationResult From Station PlaceHolder
+%p
+  To
+  %span#toStationResult To Station PlaceHolder

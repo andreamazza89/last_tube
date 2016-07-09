@@ -7,6 +7,7 @@ require 'capybara/rspec'
 require 'rspec'
 
 Capybara.app = LastTube
+Capybara.default_driver = :selenium
 
 RSpec.configure do |config|
 

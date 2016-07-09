@@ -5,6 +5,7 @@ require 'haml'
 class LastTube < Sinatra::Base
 
   set :haml, format: :html5
+  set :public_folder, './lib'
 
   get '/' do
     'Welcome to LastTube!'
