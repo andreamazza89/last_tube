@@ -8,7 +8,7 @@ class LastTube < Sinatra::Base
   set :public_folder, './lib'
 
   get '/' do
-    'Welcome to LastTube!'
+    redirect '/tubes/search'
   end
 
   get '/tubes/search' do

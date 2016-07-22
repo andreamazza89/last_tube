@@ -1,17 +1,23 @@
 %form#fromStation
   From
   %br
-  %input{type: 'text', id: 'fromSearchParameter', name: 'fromStation'}
-  %input{type: 'submit', value: 'from'}
+  %input{ type: 'text', id: 'fromSearchParameter', name: 'fromStation' }
+  %input{ type: 'submit', value: 'from' }
 %form#toStation
   To
   %br
-  %input{type: 'text', id: 'toSearchParameter', name: 'toStation'}
-  %input{type: 'submit', value: 'to'}
+  %input{ type: 'text', id: 'toSearchParameter', name: 'toStation' }
+  %input{ type: 'submit', value: 'to' }
  
 %p
   From 
-  %span#fromStationResult From Station PlaceHolder
+  %span#fromStationResult
 %p
   To
-  %span#toStationResult To Station PlaceHolder
+  %span#toStationResult
+
+%button{ type: 'submit', value: 'Hurry Up!', id: 'findLastJourney' }Hurry Up!
+
+%div{ id: 'last-train-container', style: "display: none" }
+  %h3 The last train leaves at 
+  %p#lastTrainTime

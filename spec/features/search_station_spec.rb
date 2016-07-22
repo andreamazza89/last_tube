@@ -1,14 +1,7 @@
-feature 'Feature tests' do
-
-  describe 'Home page' do
-    scenario 'greets the user' do
-      visit('/')  
-      expect(page).to have_content('Welcome')
-    end
-  end
-
+feature 'Feature-search station' do
 
   describe 'Stations selection' do
+
     scenario 'user enters "vic", clicks "search", system prints Victoria ' do
       visit('/tubes/search')  
       within('#fromStation') do 
@@ -17,9 +10,7 @@ feature 'Feature tests' do
       end 
       expect(page).to have_content('Victoria')
     end
-  end
 
-  describe 'Stations selection' do
     scenario 'user enters "vic", clicks "search", system prints Victoria ' do
       visit('/tubes/search')  
       within('#toStation') do 
