@@ -24,7 +24,7 @@ feature 'Feature-find last train' do
       click_button('Hurry Up!')
       sleep(2)
 
-      expect(page).to have_content('The last train leaves at 2016-07-23T00:31:00')
+      expect(page).to have_content('The last train leaves at 2016-08-02T00:31:00')
     end
   end
 end
